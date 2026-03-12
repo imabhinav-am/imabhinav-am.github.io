@@ -1,7 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abhinav Mishra | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+position:fixed;
+width:100%;
+background:#0f172a;
+z-index:100;
+}
+
+nav a{
+color:#e2e8f0;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.2rem;
+color:#94a3b8;
+max-width:600px;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+padding:12px 24px;
+border-radius:6px;
+margin:5px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:#020617;
+}
+
+.btn-outline{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:30px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-5px);
+background:#334155;
+}
+
+/* EXPERIENCE */
+
+.timeline{
+border-left:2px solid #38bdf8;
+padding-left:20px;
+}
+
+.job{
+margin-bottom:30px;
+}
+
+.job h3{
+color:#38bdf8;
+}
+
+.job span{
+color:#94a3b8;
+font-size:.9rem;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#64748b;
+}
+
+/* ANIMATION */
+
+.fade{
+opacity:0;
+transform:translateY(20px);
+transition:all .8s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+nav{
+padding:15px 5%;
+}
+
+section{
+padding:70px 5%;
+}
+
+}
+
+</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<nav>
+<div><strong>Abhinav</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Abhinav Mishra</h1>
+<p>
+Software Development Engineer II at Amazon specializing in backend systems,
+distributed architectures, and ML-powered platforms.
+</p>
+
+<div class="buttons">
+<a class="btn btn-primary" href="https://github.com/imabhinav-am">GitHub</a>
+<a class="btn btn-outline" href="https://linkedin.com/in/imabhinav-am">LinkedIn</a>
+</div>
+</section>
+
+<section id="about" class="fade">
+<h2 class="section-title">About</h2>
+<p>
+Backend engineer with 5+ years of experience designing scalable microservices
+and cloud systems using Java and AWS. At Amazon Relay I helped build ML-driven
+pricing systems, LLM automation, and large-scale infrastructure optimizations
+delivering millions in cost savings.
+</p>
+</section>
+
+<section id="skills" class="fade">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Languages</h3>
+<p>Java, Python, TypeScript</p>
+</div>
+
+<div class="skill-card">
+<h3>Backend</h3>
+<p>Microservices, REST APIs, Spring</p>
+</div>
+
+<div class="skill-card">
+<h3>Cloud</h3>
+<p>AWS, Lambda, DynamoDB, SageMaker</p>
+</div>
+
+<div class="skill-card">
+<h3>Architecture</h3>
+<p>System Design, Distributed Systems</p>
+</div>
+
+</div>
+</section>
+
+<section id="experience" class="fade">
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="job">
+<h3>Amazon — SDE II</h3>
+<span>2023 – Present</span>
+<p>
+Built ML-based pricing negotiation platform using SageMaker and microservices,
+reducing pricing premiums and delivering $50M+ cost savings.
+</p>
+</div>
+
+<div class="job">
+<h3>Amazon — SDE I</h3>
+<span>2021 – 2023</span>
+<p>
+Led global expansion of Amazon Relay to Australia and Brazil and implemented
+resilient workflows using DynamoDB fallbacks.
+</p>
+</div>
+
+<div class="job">
+<h3>Sigmoid Analytics</h3>
+<span>2020 – 2021</span>
+<p>
+Built real-time data pipelines and analytics systems using Python, Kafka,
+Airflow and BigQuery.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact fade">
+<h2 class="section-title">Contact</h2>
+
+<p>Email: imabhinav.am@gmail.com</p>
+<p>GitHub: github.com/imabhinav-am</p>
+<p>LinkedIn: linkedin.com/in/imabhinav-am</p>
+
+</section>
+
+<footer>
+© 2026 Abhinav Mishra
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show")
+}
+})
+})
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el)
+})
+
+</script>
+
 </body>
 </html>
