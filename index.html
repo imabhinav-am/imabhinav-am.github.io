@@ -1,28 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abhinav Mishra | Backend Engineer</title>
+
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
 
 <body>
 
-<nav>
+<div id="particles-js"></div>
+
+<nav class="glass">
 <div class="logo">Abhinav Mishra</div>
-<div class="nav-links">
+<div class="links">
 <a href="#about">About</a>
 <a href="#impact">Impact</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
 
-<header class="hero">
+<section class="hero">
 <h1>Software Development Engineer II</h1>
 <h2>Amazon</h2>
 <p>Building scalable backend systems and ML‑powered platforms using Java and AWS.</p>
@@ -30,100 +36,75 @@
 <div class="buttons">
 <a class="btn primary" href="https://github.com/imabhinav-am">GitHub</a>
 <a class="btn outline" href="https://linkedin.com/in/imabhinav-am">LinkedIn</a>
-<a class="btn outline" href="resume.pdf">Resume</a>
+<a class="btn outline" href="#">Resume</a>
 </div>
-</header>
-
-<section id="about">
-<h2>About</h2>
-<p>
-Backend engineer with 5+ years of experience designing distributed systems,
-cloud infrastructure, and ML-powered services. Currently working on pricing
-platforms and LLM automation at Amazon Relay.
-</p>
 </section>
 
 <section id="impact">
+
 <h2>Impact</h2>
+
 <div class="cards">
 
-<div class="card">
+<div class="card glass">
 <h3>$50M+</h3>
-<p>Annual cost savings from ML pricing platform</p>
+<p>Annual cost savings delivered via ML pricing systems</p>
 </div>
 
-<div class="card">
+<div class="card glass">
 <h3>40%</h3>
 <p>Support cases reduced via LLM automation</p>
 </div>
 
-<div class="card">
+<div class="card glass">
 <h3>50%</h3>
 <p>ML infrastructure cost reduction</p>
 </div>
 
 </div>
+
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
-<div class="grid">
-<div>Java</div>
-<div>Python</div>
-<div>TypeScript</div>
-<div>Spring</div>
-<div>AWS</div>
-<div>SageMaker</div>
-<div>DynamoDB</div>
-<div>Lambda</div>
-<div>Microservices</div>
-<div>System Design</div>
+
+<h2>Tech Stack</h2>
+
+<div class="skills">
+
+<div class="glass">Java</div>
+<div class="glass">Python</div>
+<div class="glass">TypeScript</div>
+<div class="glass">AWS</div>
+<div class="glass">SageMaker</div>
+<div class="glass">DynamoDB</div>
+<div class="glass">Lambda</div>
+<div class="glass">Microservices</div>
+<div class="glass">Spring</div>
+<div class="glass">System Design</div>
+
 </div>
+
 </section>
 
 <section id="projects">
+
 <h2>Projects</h2>
+
 <div class="cards">
 
-<div class="card">
-<h3>ML Pricing Negotiation</h3>
-<p>SageMaker-powered dynamic pricing platform for Amazon Relay marketplace.</p>
+<div class="card glass">
+<h3>ML Pricing Platform</h3>
+<p>SageMaker powered pricing negotiation system for Amazon Relay marketplace.</p>
 </div>
 
-<div class="card">
+<div class="card glass">
 <h3>LLM Support Automation</h3>
-<p>Improved Bedrock classifier reducing informational support cases.</p>
+<p>Improved Bedrock classifier reducing operational support load.</p>
 </div>
 
-<div class="card">
-<h3>Streaming Analytics Platform</h3>
-<p>Kafka + Spark pipeline delivering real-time Twitter analytics.</p>
-</div>
-
-</div>
-</section>
-
-<section id="experience">
-<h2>Experience</h2>
-
-<div class="timeline">
-
-<div class="job">
-<h3>Amazon — SDE II</h3>
-<span>2023 – Present</span>
-<p>ML-driven pricing systems delivering $50M+ annual savings.</p>
-</div>
-
-<div class="job">
-<h3>Amazon — SDE I</h3>
-<span>2021 – 2023</span>
-<p>Led Relay expansion to Australia and Brazil.</p>
-</div>
-
-<div class="job">
-<h3>Sigmoid Analytics</h3>
-<span>2020 – 2021</span>
-<p>Built streaming data pipelines and analytics platforms.</p>
+<div class="card glass">
+<h3>Streaming Analytics</h3>
+<p>Kafka + Spark real‑time analytics pipeline.</p>
 </div>
 
 </div>
@@ -131,15 +112,20 @@ platforms and LLM automation at Amazon Relay.
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
-<p>Email: imabhinav.am@gmail.com</p>
-<p>GitHub: github.com/imabhinav-am</p>
-<p>LinkedIn: linkedin.com/in/imabhinav-am</p>
+
+<p>📧 imabhinav.am@gmail.com</p>
+<p>💻 github.com/imabhinav-am</p>
+<p>🔗 linkedin.com/in/imabhinav-am</p>
+
 </section>
 
 <footer>
 © 2026 Abhinav Mishra
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
